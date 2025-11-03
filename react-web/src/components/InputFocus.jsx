@@ -1,21 +1,29 @@
+import React from 'react'
+import { useState } from 'react'
 
-
-function InputFocus() {
-  const submitHandler = (e) => {
-      e.preventDefault()
-      console.log('form submited without page reload')
-  }
-
+const InputFocus = () => {
+    const [title, setTitle] = useState('')
+    const submitHandler = (e) => {
+        e.preventDefault()
+        console.log('form submited')
+    }
   return (
     <div>
       <form onSubmit={(e)=>{
         submitHandler(e)
       }}>
-        <input type="text" placeholder="write something..." />
+        <input type="text" 
+        placeholder='write something' 
+      
+        onChange={(e) => {
+          console.log(e.target.value)
+        }}
+        />
         <button>Submit</button>
       </form>
     </div>
-  );
+  )
 }
 
-export default InputFocus;
+export default InputFocus
+
