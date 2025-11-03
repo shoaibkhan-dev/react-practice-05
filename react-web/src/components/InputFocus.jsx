@@ -3,6 +3,7 @@
 function InputFocus() {
   const submitHandler = (e) => {
       e.preventDefault()
+      console.log('form submited without page reload')
   }
 
   return (
@@ -11,7 +12,7 @@ function InputFocus() {
         submitHandler(e)
       }}>
         <input type="text" placeholder="write something..." />
-        <button onClick={submitHandler}>Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   );
