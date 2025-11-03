@@ -5,7 +5,7 @@ const InputFocus = () => {
     const [title, setTitle] = useState('')
     const submitHandler = (e) => {
         e.preventDefault()
-        console.log('form submited')
+        console.log('form submited by', title)
     }
   return (
     <div>
@@ -14,9 +14,10 @@ const InputFocus = () => {
       }}>
         <input type="text" 
         placeholder='write something' 
-      
+        value={title}
         onChange={(e) => {
-          console.log(e.target.value)
+          setTitle(e.target.value)
+          
         }}
         />
         <button>Submit</button>
