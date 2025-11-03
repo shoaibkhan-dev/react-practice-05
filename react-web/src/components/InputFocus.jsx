@@ -1,16 +1,18 @@
-import { useRef } from "react";
+
 
 function InputFocus() {
-  const inputRef = useRef(null);
-
-  const handleClick = () => {
-    inputRef.current.focus(); // direct DOM element access
-  };
+  const submitHandler = (e) => {
+      e.preventDefault()
+  }
 
   return (
     <div>
-      <input ref={inputRef} type="text" placeholder="Type here..." />
-      <button onClick={handleClick}>Focus Input</button>
+      <form onSubmit={(e)=>{
+        submitHandler(e)
+      }}>
+        <input type="text" placeholder="write something..." />
+        <button onClick={submitHandler}>Submit</button>
+      </form>
     </div>
   );
 }
