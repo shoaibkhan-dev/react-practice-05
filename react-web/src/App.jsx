@@ -1,6 +1,6 @@
-import React from 'react'
+import InputFocus from './components/Form/InputFocus'
 import Navbar from './components/Header/Navbar'
-import InputFocus from './components/InputFocus'
+
 
 const App = () => {
   return (
