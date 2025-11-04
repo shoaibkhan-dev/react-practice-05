@@ -35,6 +35,7 @@ import './InputFocus.css'
 const InputFocus = () => {
     const [title, setTitle] = useState('')
     const [detail, setDetail] = useState('')
+    const [task, setTask] = useState('')
     const handleSubmit = (e) =>{
        e.preventDefault()
        console.log(title, detail)
@@ -70,4 +71,4 @@ const InputFocus = () => {
   )
 }
 
-export default InputFocus
+export default InputFocus;
