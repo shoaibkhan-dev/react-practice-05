@@ -65,7 +65,6 @@ const InputFocus = () => {
           />
           <br />
         <button className='btn'>Add note</button>
-        <button className='btn2'>submit</button>
       </form>
       <div className='output'></div>
     </div>
