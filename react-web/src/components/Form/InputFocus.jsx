@@ -80,7 +80,7 @@ import React from 'react'
 const InputFocus = () => {
   return (
     <div>
-      <h1>hello here</h1>
+      <h1 className='header'> hello here</h1>
     </div>
   )
 }
