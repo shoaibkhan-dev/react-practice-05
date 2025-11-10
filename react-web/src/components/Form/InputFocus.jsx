@@ -81,6 +81,7 @@ const InputFocus = () => {
   return (
     <div>
       <h1 className='header'> hello here</h1>
+      <button>submit</button>
     </div>
   )
 }
