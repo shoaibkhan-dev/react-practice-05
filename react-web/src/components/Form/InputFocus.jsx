@@ -83,8 +83,8 @@ const InputFocus = () => {
       <h1 className='header'> hello here</h1>
       <button className='btn3'>submit</button>
       <form>
-        <input type="text" />
-        <input type="text" />
+        <input type="text" placeholder='enter name'/>
+        <input type="text" placeholder='enter email'/>
       </form>
     </div>
   )
