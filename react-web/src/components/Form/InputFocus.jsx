@@ -85,6 +85,7 @@ const InputFocus = () => {
       <form>
         <input type="text" placeholder='enter name'/>
         <input type="text" placeholder='enter email'/>
+        <button>click me</button>
       </form>
     </div>
   )
