@@ -89,6 +89,7 @@ const InputFocus = () => {
         <input type="text" placeholder='enter email'/>
         <button onClick={alert('submited')}>Click Me</button>
         <h1 className='footer'>form footer</h1>
+        <h2>2025 copyright all right reserved</h2>
       </form>
     </div>
   )
