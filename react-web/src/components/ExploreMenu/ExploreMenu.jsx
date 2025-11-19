@@ -3,7 +3,7 @@ import './ExploreMenu.css'
 const ExploreMenu = () => {
   return (
     <div>
-      
+      <h1>This is explore Menu</h1>
     </div>
   )
 }
