@@ -8,6 +8,7 @@ const ExploreMenu = () => {
       <form>
         <input type="text" placeholder='enter name' />
         <input type="text" placeholder='enter email' />
+        <button>submit</button>
       </form>
       <button>click me</button>
     </div>
